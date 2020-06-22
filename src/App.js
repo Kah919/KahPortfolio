@@ -1,20 +1,12 @@
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
-import NavItem from './components/Navbar/NavItem';
-import DropdownMenu from './components/Navbar/DropdownMenu';
-
+import Landing from './components/LandingPage/Landing';
 
 function App() {
   return (
-    <div>
-      <Navbar>
-        <NavItem icon=":)" />
-        <NavItem icon=":|" />
-        <NavItem icon=":(" />
-        <NavItem icon="owo" >
-          <DropdownMenu />
-        </NavItem>
-      </Navbar>
+    <div className="main_container">
+      <Navbar />
+      <Landing />
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.nav_container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: .5px solid white;
+    height: 25px;
+    padding: 10px;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+li:hover {
+    color: gray;
+    transition: ease-in 0.5s;
+}
