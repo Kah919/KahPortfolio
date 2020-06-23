@@ -3,6 +3,8 @@
     border-bottom: .5px solid white;
     height: 25px;
     padding: 10px;
+    position: sticky;
+    top: 0;
 }
 
 ul {
