@@ -1,18 +1,25 @@
 .nav_container {
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: .5px solid white;
-    height: 25px;
-    padding: 10px;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul {
+.logo {
+    color: white;
+}
+
+.nav_container ul {
     height: 100%;
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: flex-end;
+    color: white;
+}
+
+.nav_container a {
+    color: white;
 }
 
 li {

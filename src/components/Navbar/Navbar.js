@@ -1,21 +1,24 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import {useSpring, animated} from 'react-spring';
 
 
 export default () => {
-    const props = useSpring({
-        marginTop: 0,
-        from: {marginTop: -100}
-    });
-
     return(
-        <animated.nav className={styles.nav_container} style={props}>
+        <nav className={styles.nav_container}>
+            <div className={styles.logo}>Kah Yap</div>
+            
             <ul>
                 <li> Home </li>
                 <li> About </li>
                 <li> Contact </li>
             </ul>
-        </animated.nav>
+
+            <div className={styles.social_container}>
+                <a href="#" className="fa fa-instagram"></a>
+                <a href="#" className="fa fa-github"></a>
+                <a href="#" className="fa fa-linkedin"></a>
+            </div>
+            
+        </nav>
     )
 }
