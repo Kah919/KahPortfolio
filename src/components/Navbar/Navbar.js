@@ -5,7 +5,10 @@ import styles from './Navbar.module.css';
 export default () => {
     return(
         <nav className={styles.nav_container}>
-            <div className={styles.logo}>KY</div>
+            <div className={styles.logo}>
+                <span>KAH</span>
+                <span>YAP</span>
+            </div>
             
             <ul>
                 <li> Home </li>

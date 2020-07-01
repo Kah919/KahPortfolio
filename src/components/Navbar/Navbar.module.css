@@ -4,11 +4,16 @@
     top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 100px;
+    z-index: 1;
 }
 
-.logo {
-    color: white;
+
+.logo span {
+    display: block;
+    text-align: center;
+    font-size: 10px;
 }
 
 .nav_container ul {
@@ -16,11 +21,9 @@
     display: flex;
     list-style-type: none;
     align-items: center;
-    color: white;
 }
 
 .nav_container a {
-    color: white;
     align-items: center;
     padding: 5px;
     
@@ -42,3 +45,4 @@ a:hover {
     color: gray;
     transition: ease-in 0.5s;
 }
+
