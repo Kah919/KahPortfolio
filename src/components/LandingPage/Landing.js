@@ -22,10 +22,9 @@ export default () => {
   return (
     <div className={styles.landing_container}>
       <div className={styles.left}> 
-        <img src={toggle ? Force : Leaves}></img>
-    
+        
         <div className={styles.trails_main} onClick={() => set(state => !state)}>
-          <div>
+          <div className={styles.text_container}>
             {trail.map(({ x, height, ...rest }, index) => (
               <animated.div
                 key={items[index]}
@@ -36,6 +35,8 @@ export default () => {
             ))}
           </div>
         </div>
+
+        <img className={styles.hero} src={toggle ? Force : Leaves}></img>
       </div>
 
       <div className={styles.right}>

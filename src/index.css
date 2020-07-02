@@ -4,6 +4,7 @@
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
   color: white;
+  overflow: hidden;
 }
 
 .main_container {
