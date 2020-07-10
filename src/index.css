@@ -3,11 +3,25 @@
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   text-decoration: none;
-  color: white;
-  overflow: hidden;
+  /* color: white; */
+  box-sizing: border-box;
+  --dark-background: rgba(0, 0, 0, 0.8);
+  --light-background: rgba(255, 255, 255, 0.8);
+  --dark-font: white;
+  --light-font: black;
+  --transition-delay: 1s;
 }
 
 .main_container {
-  position: relative;
+  display: grid;
+  /* height: 100vh;
+  overflow: hidden; */
 }
+
+.icon {
+  fill: orangered;
+  width: 20px;
+  cursor: pointer;
+}
+
 

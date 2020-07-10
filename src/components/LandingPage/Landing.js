@@ -11,19 +11,19 @@ export default () => {
     const config = { mass: 5, tension: 2000, friction: 200 }
 
     const [toggle, set] = useState(true)
-    const trail = useTrail(items.length, {
-    config,
-    opacity: toggle ? 1 : 0,
-    x: toggle ? 0 : 20,
-    height: toggle ? 40 : 0,
-    from: { opacity: 0, x: 20, height: 0 },
-  })
+  //   const trail = useTrail(items.length, {
+  //   config,
+  //   opacity: toggle ? 1 : 0,
+  //   x: toggle ? 0 : 20,
+  //   height: toggle ? 40 : 0,
+  //   from: { opacity: 0, x: 20, height: 0 },
+  //   })
 
   return (
     <div className={styles.landing_container}>
       <div className={styles.left}> 
         
-        <div className={styles.trails_main} onClick={() => set(state => !state)}>
+        {/* <div className={styles.trails_main} onClick={() => set(state => !state)}>
           <div className={styles.text_container}>
             {trail.map(({ x, height, ...rest }, index) => (
               <animated.div
@@ -34,16 +34,19 @@ export default () => {
               </animated.div>
             ))}
           </div>
-        </div>
+        </div> */}
 
-        <img className={styles.hero} src={toggle ? Force : Leaves}></img>
+        <img onClick={() => set(!toggle)} className={styles.hero} src={toggle ? Force : Leaves}></img>
       </div>
 
       <div className={styles.right}>
-        <h1> Who Am I? </h1>
-        <p>
-          Et consequat nulla anim ullamco occaecat ex aute anim tempor laborum. Nisi aliquip et ea cillum incididunt. Excepteur eu voluptate amet fugiat aute amet sit veniam amet. Reprehenderit aliqua dolore fugiat aliqua deserunt et irure commodo adipisicing pariatur amet voluptate.
-        </p>
+        { toggle ? 
+          <h1> Who Am I? </h1> : 
+          <p>
+            Et consequat nulla anim ullamco occaecat ex aute anim tempor laborum. Nisi aliquip et ea cillum incididunt. Excepteur eu voluptate amet fugiat aute amet sit veniam amet. Reprehenderit aliqua dolore fugiat aliqua deserunt et irure commodo adipisicing pariatur amet voluptate.
+          </p>}
+
+          <h5>HIHIHI</h5>
       </div>
     </div>
   )
