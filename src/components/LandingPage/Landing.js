@@ -32,8 +32,6 @@ export default ({ dark }) => {
           <p>
             Et consequat nulla anim ullamco occaecat ex aute anim tempor laborum. Nisi aliquip et ea cillum incididunt. Excepteur eu voluptate amet fugiat aute amet sit veniam amet. Reprehenderit aliqua dolore fugiat aliqua deserunt et irure commodo adipisicing pariatur amet voluptate.
           </p>}
-
-          <h5>HIHIHI</h5>
       </div>
     </div>
   )

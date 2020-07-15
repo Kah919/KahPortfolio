@@ -20,7 +20,7 @@
   }
 
   .hero {
-    box-shadow: 2px 2px 2px rgba(255,255,255,0.8);
+    box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.8);
   }
 
   .hero:hover {
@@ -36,14 +36,15 @@
     margin-right: auto;
     transition: 0.5s ease-in;
     border-radius: 10px;
+    cursor: pointer;
   }
 
-  .left img:hover,
+  /* .left img:hover,
   .left img:focus {
     
-    width: 350px;
-    height: 450px;
-  }
+    width: 300px;
+    height: 400px;
+  } */
 
 .left {
   width: 100%;
@@ -54,13 +55,21 @@
 .right {
   width: 100%;
   text-align: center;
+  display: flex;
   padding: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 .dark_landing_container {
   background-image: url(../../Images/landing.jpg);
+  color: white;
+}
+
+.dark_landing_container img {
+  box-shadow: 10px 10px 10px 2px rgba(255,255,255,0.8);
 }
   
 
