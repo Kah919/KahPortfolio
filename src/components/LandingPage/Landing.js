@@ -3,40 +3,27 @@ import { useTrail, animated } from 'react-spring';
 import Force from '../../Images/force.jpg';
 import Leaves from '../../Images/leaves.jpg';
 import styles from './Landing.module.css';
+import cx from 'classnames';
 
 
 
-export default () => {
+export default ({ dark }) => {
     const items = ['Kah Yap', 'Software', 'Engineer', 'Click Me :)']
     const config = { mass: 5, tension: 2000, friction: 200 }
-
     const [toggle, set] = useState(true)
-  //   const trail = useTrail(items.length, {
-  //   config,
-  //   opacity: toggle ? 1 : 0,
-  //   x: toggle ? 0 : 20,
-  //   height: toggle ? 40 : 0,
-  //   from: { opacity: 0, x: 20, height: 0 },
-  //   })
+
+    const darkContainer = () => {
+      if(dark) {
+        return cx(styles.landing_container, styles.dark_landing_container)
+      } else {
+        return cx(styles.landing_container)
+      }
+    }
 
   return (
-    <div className={styles.landing_container}>
+    <div className={darkContainer()}>
       <div className={styles.left}> 
-        
-        {/* <div className={styles.trails_main} onClick={() => set(state => !state)}>
-          <div className={styles.text_container}>
-            {trail.map(({ x, height, ...rest }, index) => (
-              <animated.div
-                key={items[index]}
-                className={styles.trails_text}
-                style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-                <animated.div style={{ height }}>{items[index]}</animated.div>
-              </animated.div>
-            ))}
-          </div>
-        </div> */}
-
-        <img onClick={() => set(!toggle)} className={styles.hero} src={toggle ? Force : Leaves}></img>
+        <img onClick={() => set(!toggle)} className={styles.hero} src={dark ? Force : Leaves}></img>
       </div>
 
       <div className={styles.right}>

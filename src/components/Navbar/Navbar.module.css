@@ -1,5 +1,4 @@
 .nav_container {
-    /* background-color: rgba(0, 0, 0, 0.8); */
     background-color: var(--light-background);
     position: sticky;
     top: 0;
@@ -9,7 +8,7 @@
     padding: 8px 100px;
     z-index: 1;
     color: var(--light-font);
-    border-bottom: 0.5px solid orangered;
+    border-bottom: 0.5px solid var(--light-font);
     transition: var(--transition-delay);
 }
 
@@ -50,8 +49,15 @@ a:hover {
     transition: ease-in 0.5s;
 }
 
+.icon {
+    fill: var(--light-font);
+    width: 20px;
+    cursor: pointer;
+  }
+
 .dark_container {
     background-color: var(--dark-background);
+    border-bottom: 1px solid var(--dark-font);
 }
 
 .dark_container li {
@@ -60,6 +66,10 @@ a:hover {
 
 .dark_container a {
     color: var(--dark-font);
+}
+
+.dark_container .icon {
+    fill: var(--dark-font);
 }
 
 @media only screen 

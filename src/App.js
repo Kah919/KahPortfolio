@@ -14,8 +14,8 @@ function App() {
     <div className="main_container">
       { dark ? console.log("DARK") : console.log("Light") }
       <Navbar dark={dark} toggleMode={ toggleMode }/>
-      {/* <Landing dark={dark} />
-      <Landing dark={dark} /> */}
+      <Landing dark={dark} />
+      <Landing dark={dark} />
     </div>
   );
 }

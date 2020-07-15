@@ -9,7 +9,8 @@
   --light-background: rgba(255, 255, 255, 0.8);
   --dark-font: white;
   --light-font: black;
-  --transition-delay: 1s;
+  --transition-delay: 1.5s;
+  box-sizing: border-box;
 }
 
 .main_container {
@@ -18,10 +19,6 @@
   overflow: hidden; */
 }
 
-.icon {
-  fill: orangered;
-  width: 20px;
-  cursor: pointer;
-}
+
 
 
