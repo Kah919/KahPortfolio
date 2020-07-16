@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Landing from './components/LandingPage/Landing';
+import Project from './components/Projects/ProjectContainer';
+
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 
 function App() {
   const [dark, setDark] = useState(false);
@@ -10,13 +14,17 @@ function App() {
     setDark(!dark);
   }
 
+  const MyContext = React.createContext(dark);
+
   return (
-    <div className="main_container">
-      { dark ? console.log("DARK") : console.log("Light") }
-      <Navbar dark={dark} toggleMode={ toggleMode }/>
-      <Landing dark={dark} />
-      <Landing dark={dark} />
-    </div>
+    <Router>
+        <Navbar dark={dark} toggleMode={ toggleMode }/>
+        <Switch>
+          <Route exact path='/projects'><Project /></Route>
+          <Route exact path='/'><Landing /></Route>
+          
+        </Switch>
+    </Router>
   );
 }
 
