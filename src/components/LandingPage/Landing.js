@@ -5,11 +5,7 @@ import Leaves from '../../Images/leaves.jpg';
 import styles from './Landing.module.css';
 import cx from 'classnames';
 
-
-
 export default ({ dark }) => {
-    const items = ['Kah Yap', 'Software', 'Engineer', 'Click Me :)']
-    const config = { mass: 5, tension: 2000, friction: 200 }
     const [toggle, set] = useState(true)
 
     const darkContainer = () => {
@@ -36,3 +32,4 @@ export default ({ dark }) => {
     </div>
   )
 }
+
