@@ -1,16 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import styles from './Project.module.css';
+import cx from 'classnames';
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
+import data from './data';
 
 export default (props) => {
-    const [mode, setMode] = useState();
-    useEffect(() => {
-        console.log("LOADING", props.location.state.dark)
-        // setMode(props.location.state.dark)
-    }, [props.location.state.dark])
 
     return(
-        <>
-            {console.log(props.location.state.dark)}
-            <h1> Project Page </h1>
-        </>
+        <div className={ styles.project_container}>
+            { console.log(data) }
+            <div className={ styles.description }>
+                <label for="projects"> Projects </label>
+
+                <select name="projects" id="projects">
+                    <option value="guess"> Guess Who Infinite </option>
+                    <option value="corona"> COVID-19 Visualizer </option>
+                    <option value="name"> NameRater </option>
+                    <option value="hangry"> Hangry </option>
+                    <option value="ohsnap"> OhSnap </option>
+                    <option value="stock"> Virtual Stock </option>
+                </select>
+            </div>
+
+            <div className={ styles.carousel_container}>
+
+            </div>
+        </div>
     )
 }

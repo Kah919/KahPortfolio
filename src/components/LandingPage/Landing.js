@@ -22,7 +22,7 @@ export default ({ dark }) => {
   return (
     <div className={darkContainer()}>
       <div className={styles.left}> 
-        <img onClick={() => set(!toggle)} className={styles.hero} src={dark ? Force : Leaves}></img>
+        <img onClick={() => set(!toggle)} className={styles.hero} src={ globalState.dark ? Force : Leaves }></img>
       </div>
 
       <div className={styles.right}>

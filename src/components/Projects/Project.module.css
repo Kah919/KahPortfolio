@@ -1,0 +1,17 @@
+.project_container {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 100vh;
+}
+
+.description {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_container {
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}

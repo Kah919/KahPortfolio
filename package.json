@@ -12,6 +12,7 @@
     "@types/react-transition-group": "^4.4.0",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^16.13.1",
     "react-hooks-global-state": "^1.0.1",
     "react-reveal": "^1.2.2",
