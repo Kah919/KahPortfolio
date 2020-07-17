@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useTrail, animated } from 'react-spring';
 import Force from '../../Images/force.jpg';
 import Leaves from '../../Images/leaves.jpg';
 import styles from './Landing.module.css';
 import cx from 'classnames';
+import Context from '../theme-context';
+
 
 export default ({ dark }) => {
     const [toggle, set] = useState(true)
+    const { globalState, globalDispatch } = useContext(Context);
 
     const darkContainer = () => {
-      if(dark) {
+      if(globalState.dark) {
         return cx(styles.landing_container, styles.dark_landing_container)
       } else {
         return cx(styles.landing_container)

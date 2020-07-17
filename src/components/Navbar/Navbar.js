@@ -12,7 +12,7 @@ export default ({toggleMode, dark}) => {
 
     const container = () => {
         console.log(`DARK from the ${update}`)
-        return dark ? cx(styles.nav_container, styles.dark_container) : styles.nav_container
+        return globalState.dark ? cx(styles.nav_container, styles.dark_container) : styles.nav_container
     }
 
     return(
