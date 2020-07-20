@@ -1,16 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styles from './Project.module.css';
 import cx from 'classnames';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import data from './data';
+import Context from '../theme-context';
+
+
 
 export default (props) => {
     let [project, setProject] = useState('');
+    const { globalState, globalDispatch } = useContext(Context);
 
     const createOptions = () => {
         return data.map(data => {
-            return <option value={ data.name } placeholder="---" > { data.name } </option>
+            return <option value={ data.name } > { data.name } </option>
         })
     }
 
@@ -42,10 +46,11 @@ export default (props) => {
     
 
     return(
-        <div className={ styles.project_container}>
+        <div className={ globalState.dark ? cx(styles.project_container, styles.dark) : styles.project_container}>
             <div className={ styles.description }>
                 <form>
                     <select value={ project } onChange={ handleChange }>
+                        <option> Select A Project </option>
                         { createOptions() }
                     </select>
                 </form>
@@ -57,7 +62,7 @@ export default (props) => {
             </div>
 
             <div className={ cx(styles.carousel_container, styles.aws_btn)}>
-                <AwesomeSlider bullets={ false }>
+                <AwesomeSlider bullets={ false } className={ styles.aws_btn } >
                     { carouselImg() }
                 </AwesomeSlider>
             </div>
