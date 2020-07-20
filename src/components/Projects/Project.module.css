@@ -6,8 +6,9 @@
 }
 
 .description {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .description form {
@@ -23,13 +24,22 @@
     display: flex;
     text-decoration: none;
     list-style: none;
-    width: 80%;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px;
 }
 
 .technology li {
-    margin: 0 auto;
+    font-size: 14px;
 }
+
+
 
 .aws_btn {
     --slider-height-percentage: 60%;
