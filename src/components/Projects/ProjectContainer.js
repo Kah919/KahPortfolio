@@ -10,7 +10,7 @@ export default (props) => {
 
     const createOptions = () => {
         return data.map(data => {
-            return <option value={ data.name }> { data.name } </option>
+            return <option value={ data.name } placeholder="---" > { data.name } </option>
         })
     }
 
@@ -27,6 +27,8 @@ export default (props) => {
             return findProject().images.map(image => {
                 return <div data-src={ image } className={ styles.test }/>
             })            
+        } else {
+            return <h1> Please select a project </h1>
         }
     }
 
