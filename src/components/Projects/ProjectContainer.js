@@ -6,25 +6,58 @@ import 'react-awesome-slider/dist/styles.css';
 import data from './data';
 
 export default (props) => {
+    let [project, setProject] = useState('');
+
+    const createOptions = () => {
+        return data.map(data => {
+            return <option value={ data.name }> { data.name } </option>
+        })
+    }
+
+    const handleChange = event => {
+        setProject(event.target.value);
+    }
+
+    const findProject = () => {
+        return data.find(data => data.name === project);
+    }
+
+    const carouselImg = () => {
+        if(project !== '') {
+            return findProject().images.map(image => {
+                return <div data-src={ image } className={ styles.test }/>
+            })            
+        }
+    }
+
+    const populateTech = () => {
+        if(project !== '') {
+            return findProject().technology.map(tech => {
+                return <li> { tech } </li>
+            })            
+        }
+    }
+    
 
     return(
         <div className={ styles.project_container}>
-            { console.log(data) }
             <div className={ styles.description }>
-                <label for="projects"> Projects </label>
+                <form>
+                    <select value={ project } onChange={ handleChange }>
+                        { createOptions() }
+                    </select>
+                </form>
 
-                <select name="projects" id="projects">
-                    <option value="guess"> Guess Who Infinite </option>
-                    <option value="corona"> COVID-19 Visualizer </option>
-                    <option value="name"> NameRater </option>
-                    <option value="hangry"> Hangry </option>
-                    <option value="ohsnap"> OhSnap </option>
-                    <option value="stock"> Virtual Stock </option>
-                </select>
+                <div>
+                    <div className={ styles.description }> { project !== '' ? <p> { findProject().description } </p> : null} </div>
+                    <div className={ styles.technology }> { project !== '' ? <ul> { populateTech() } </ul> : null} </div>
+                </div>
             </div>
 
-            <div className={ styles.carousel_container}>
-
+            <div className={ cx(styles.carousel_container, styles.aws_btn)}>
+                <AwesomeSlider bullets={ false }>
+                    { carouselImg() }
+                </AwesomeSlider>
             </div>
         </div>
     )
