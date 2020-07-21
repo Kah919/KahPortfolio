@@ -10,9 +10,10 @@
     line-height: 2em;
     text-align: center;
     box-sizing: border-box;
-  }
+    height: 100vh;
+}
 
-  .icons a {
+.icons a {
     background: #232323;
     display: inline-flex;
     font-size: 56px;
@@ -26,14 +27,20 @@
     transition: 0.5s ease-in all;
     cursor: pointer;
     color: white;
-  }
+}
   
-  .icons a:hover {
-    background: orangered;
+.icons a:hover {
+    background: #add8e6;
     border-radius: 50%;
     font-size: 24px;
-  }
+}
   
-  .icons:hover {
+.icons:hover {
     font-size: 34px;
-  }
+}
+
+.dark {
+    background-image: url(../../Images/rain.gif);
+    color: white;
+    background-size: cover;
+}

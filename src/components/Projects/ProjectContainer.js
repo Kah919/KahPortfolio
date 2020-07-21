@@ -57,7 +57,10 @@ export default (props) => {
 
                 <div>
                     <div className={ styles.description }> { project !== '' ? <p> { findProject().description } </p> : null} </div>
-                    <div className={ styles.technology }> { project !== '' ? <ul> Technology: { populateTech() } </ul> : null} </div>
+                    <div className={ styles.info }>
+                        <div className={ styles.technology }> { project !== '' ? <ul> Technology: { populateTech() } </ul> : null} </div>
+                        <div className={ styles.technology }> { project !== '' ? <ul> Links: { populateTech() } </ul> : null} </div>
+                    </div>
                 </div>
             </div>
 

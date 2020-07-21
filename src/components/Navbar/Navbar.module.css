@@ -8,7 +8,8 @@
     padding: 8px 100px;
     z-index: 1;
     color: var(--light-font);
-    border-bottom: 0.5px solid var(--light-font);
+    /* border-bottom: 0.5px solid var(--light-font); */
+    box-shadow: 0.8px 0.8px 0.8px 0.8px rgba(0,0,0,0.8);
     transition: var(--transition-delay);
 }
 

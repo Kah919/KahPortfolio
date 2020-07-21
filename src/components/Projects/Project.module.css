@@ -6,9 +6,10 @@
 }
 
 .description {
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
+    
 }
 
 .description form {
@@ -16,12 +17,17 @@
 }
 
 .carousel_container {
-    width: 80%;
-    height: 85%;
+    width: 600px;
+    height: 365px;
     padding: 5px;
     margin: 20px auto 20px auto;
     box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.8);
 }
+
+/* .carousel_container img {
+    height: 80%;
+    overflow: hidden;
+} */
 
 
 .technology ul {
@@ -41,6 +47,10 @@
 
 .technology li {
     font-size: 14px;
+}
+
+.info {
+    display: flex;
 }
 
 .dark {
