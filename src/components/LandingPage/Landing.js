@@ -29,7 +29,12 @@ export default ({ dark }) => {
         { toggle ? 
           <h1> Who Am I? </h1> : 
           <p>
-            Et consequat nulla anim ullamco occaecat ex aute anim tempor laborum. Nisi aliquip et ea cillum incididunt. Excepteur eu voluptate amet fugiat aute amet sit veniam amet. Reprehenderit aliqua dolore fugiat aliqua deserunt et irure commodo adipisicing pariatur amet voluptate.
+            Welcome to my portfolio 2.0, please enjoy your stay in either light or dark mode by toggling the icon on the navbar. 
+
+            My name is Kah a software engineer who focuses on JavaScript and React but also have experience with Ruby on Rails and Express. During this pandemic I have spent my time learning new skills, participating in hackathons, and recreating my portfolio.
+
+            There is so much that I'd like to talk about so please check out the contacts page :)
+
           </p>}
       </div>
     </div>
