@@ -3,6 +3,7 @@ import styles from './Navbar.module.css';
 import cx from 'classnames';
 import { Link } from 'react-router-dom'
 import Context from '../theme-context';
+import resume from '../../Images/resume.pdf';
 
 
 export default ({toggleMode, dark}) => {
@@ -24,7 +25,7 @@ export default ({toggleMode, dark}) => {
             
             <ul>
                 <Link to={{ pathname: '/', state: { dark: update}}}> Home </Link>
-                <Link to={{ pathname: '/resume', state: { dark: dark}}}> Resume </Link>
+                <Link to={ resume } target="_blank" download> Resume </Link>
                 <Link to={{ pathname: '/projects', state: { dark: update}}}> Project </Link>
                 <Link to={{ pathname: '/contact', state: { dark: dark}}}> Contact </Link>
             </ul>
