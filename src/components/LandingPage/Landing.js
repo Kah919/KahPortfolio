@@ -27,7 +27,10 @@ export default ({ dark }) => {
 
       <div className={styles.right}>
         { toggle ? 
-          <h1> Who Am I? </h1> : 
+          <div> 
+            <h1> Kah Yap </h1>
+            <h5> Software Engineer </h5>
+          </div> : 
           <p>
             Welcome to my portfolio 2.0, please enjoy your stay in either light or dark mode by toggling the icon on the navbar. 
 
