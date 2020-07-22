@@ -21,10 +21,12 @@ export default () => {
       <div className={ globalState.dark ? cx(styles.dark, styles.contact_container) : styles.contact_container }>
         <div className={ styles.icons }>
         {print ? type() : <p className="type">You can contact me on</p>}
-        <a href="https://github.com/kah919" className="fa fa-github-alt" />
-        <a href="https://www.linkedin.com/in/kah-m-yap/" className="fa fa-linkedin" />
-        <a className="fa fa-phone" onMouseEnter={ click }/>
-        <a className="fa fa-envelope" onMouseEnter={ click }/>
+        <div className={ styles.bubble_container}>
+          <a href="https://github.com/kah919" className="fa fa-github-alt" />
+          <a href="https://www.linkedin.com/in/kah-m-yap/" className="fa fa-linkedin" />
+          <a className="fa fa-phone" onMouseEnter={ click }/>
+          <a className="fa fa-envelope" onMouseEnter={ click }/>
+        </div>
       </div>
     </div>
   )
