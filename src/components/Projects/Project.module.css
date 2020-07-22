@@ -1,7 +1,7 @@
 .project_container {
     display: grid;
     grid-template-rows: 1fr 5fr;
-    height: 100%;
+    height: 125vh;
     text-align: center;
 }
 
@@ -23,12 +23,6 @@
     margin: 20px auto 20px auto;
     box-shadow: 10px 10px 10px 2px rgba(0,0,0,0.8);
 }
-
-/* .carousel_container img {
-    height: 80%;
-    overflow: hidden;
-} */
-
 
 .technology ul {
     display: flex;
