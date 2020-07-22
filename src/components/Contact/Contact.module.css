@@ -1,12 +1,12 @@
 .contact_container {
-    padding: 30px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 50px;
     color: black;
     background-size: 100% 100%;
     font-size: 36px;
     opacity: 07;
-    top: 40%;
-    left: 30%;
-    right: 30%;
     line-height: 2em;
     text-align: center;
     box-sizing: border-box;
@@ -27,16 +27,14 @@
     transition: 0.5s ease-in all;
     cursor: pointer;
     color: white;
+    opacity: 0.9;
 }
   
 .icons a:hover {
     background: #add8e6;
     border-radius: 50%;
     font-size: 24px;
-}
-  
-.icons:hover {
-    font-size: 34px;
+    opacity: 1;
 }
 
 .dark {

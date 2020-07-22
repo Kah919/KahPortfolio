@@ -43,6 +43,14 @@ export default (props) => {
             })            
         }
     }
+
+    const populateLinks = () => {
+        if(project !== '') {
+            return findProject().links.map(tech => {
+                return <a href={ tech.link } className={ tech.icon }></a>
+            })            
+        }
+    }
     
 
     return(
@@ -59,7 +67,7 @@ export default (props) => {
                     <div className={ styles.description }> { project !== '' ? <p> { findProject().description } </p> : null} </div>
                     <div className={ styles.info }>
                         <div className={ styles.technology }> { project !== '' ? <ul> Technology: { populateTech() } </ul> : null} </div>
-                        <div className={ styles.technology }> { project !== '' ? <ul> Links: { populateTech() } </ul> : null} </div>
+                        <div className={ styles.technology }> { project !== '' ? <ul> Links: { populateLinks() } </ul> : null} </div>
                     </div>
                 </div>
             </div>

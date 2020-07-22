@@ -36,8 +36,8 @@ const projectData = [
       technology: ['MongoDB', 'Express', 'React', 'Node', 'Socket.io'],
       images: [guess1, guess2, guess3, guess4, guess5],
       links: [
-        { github: 'https://github.com/conswang/guess-who-infinite-client', icon: 'fa fa-github-alt' },
-        { demo: 'http://guess-who-infinite-client.herokuapp.com/', icon: 'fa fa-gamepad' },
+        { link: 'https://github.com/conswang/guess-who-infinite-client', icon: 'fa fa-github-alt' },
+        { link: 'http://guess-who-infinite-client.herokuapp.com/', icon: 'fa fa-gamepad' },
       ]
     },
     { name: 'Shop Equal',
@@ -45,8 +45,8 @@ const projectData = [
       technology: ['React', 'Ruby on Rails'],
       images: [shop1, shop2, shop3, shop4, shop5],
       links: [
-        { github: 'https://github.com/shopequal/shop-equal-frontend', icon: 'fa fa-github-alt' },
-        { demo: 'https://shop-equal.netlify.app/', icon: 'fa fa-gamepad' },
+        { link: 'https://github.com/shopequal/shop-equal-frontend', icon: 'fa fa-github-alt' },
+        { link: 'https://shop-equal.netlify.app/', icon: 'fa fa-gamepad' },
       ]
     },
     { name: 'COVID-19 Visualizer',
@@ -54,8 +54,8 @@ const projectData = [
       technology: ['React'],
       images: [corona1, corona2, corona3, corona4],
       links: [
-        { github: 'https://github.com/Kah919/COVID-19-Visualizer', icon: 'fa fa-github-alt' },
-        { demo: 'https://kah919.github.io/COVID-19-Visualizer/', icon: 'fa fa-gamepad' },
+        { link: 'https://github.com/Kah919/COVID-19-Visualizer', icon: 'fa fa-github-alt' },
+        { link: 'https://kah919.github.io/COVID-19-Visualizer/', icon: 'fa fa-gamepad' },
       ]
     },
     { name: 'Name Rater',
@@ -63,7 +63,7 @@ const projectData = [
       technology: ['MongoDB', 'Express', 'React', 'Node'],
       images: [name1, name2],
       links: [
-        { github: 'https://github.com/Kah919/NameRater', icon: 'fa fa-github-alt' },
+        { link: 'https://github.com/Kah919/NameRater', icon: 'fa fa-github-alt' },
       ]
     },
     { name: 'Hangry',
@@ -71,8 +71,8 @@ const projectData = [
       technology: ['React', 'Ruby on Rails'],
       images: [hangry1, hangry2, hangry3, hangry4],
       links: [
-        { github: 'https://github.com/Kah919/mod5-hangry-frontend', icon: 'fa fa-github-alt' },
-        { youtube: 'https://www.youtube.com/watch?v=iGV7HZYQ4ck&feature=youtu.be%20', icon: 'fa fa-youtube-play' },
+        { link: 'https://github.com/Kah919/mod5-hangry-frontend', icon: 'fa fa-github-alt' },
+        { link: 'https://www.youtube.com/watch?v=iGV7HZYQ4ck&feature=youtu.be%20', icon: 'fa fa-youtube-play' },
       ]
     },
     { name: 'Stock Simulator',
@@ -80,8 +80,8 @@ const projectData = [
       technology: ['React', 'Ruby on Rails'],
       images: [stock2, stock3],
       links: [
-        { github: 'https://github.com/Kah919/ttp-fs-frontend', icon: 'fa fa-github-alt' },
-        { demo: 'https://stocks-simulator-front.herokuapp.com/', icon: 'fa fa-gamepad' },
+        { link: 'https://github.com/Kah919/ttp-fs-frontend', icon: 'fa fa-github-alt' },
+        { link: 'https://stocks-simulator-front.herokuapp.com/', icon: 'fa fa-gamepad' },
       ]
     },
     { name: 'Oh Snap',
@@ -89,8 +89,8 @@ const projectData = [
       technology: ['Ruby on Rails'],
       images: [ohsnap2, ohsnap3, ohsnap4],
       links: [
-        { github: 'https://github.com/Kah919/OhSnap', icon: 'fa fa-github-alt' },
-        { youtube: 'https://www.youtube.com/watch?v=ORTxjsZOac8&feature=youtu.be', icon: 'fa fa-youtube-play' },
+        { link: 'https://github.com/Kah919/OhSnap', icon: 'fa fa-github-alt' },
+        { link: 'https://www.youtube.com/watch?v=ORTxjsZOac8&feature=youtu.be', icon: 'fa fa-youtube-play' },
       ]
     },  
 ]
