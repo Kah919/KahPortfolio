@@ -27,7 +27,6 @@
     "react-transition-group": "^1.2.1"
   },
   "scripts": {
-    // "start": "react-scripts start",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
