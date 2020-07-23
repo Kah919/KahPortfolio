@@ -31,14 +31,25 @@ export default ({ dark }) => {
             <h1> Kah Yap </h1>
             <h5> Software Engineer </h5>
           </div> : 
-          <p>
-            Welcome to my portfolio 2.0, please enjoy your stay in either light or dark mode by toggling the icon on the navbar. 
+          <div className={ styles.text_container}>
+            <p>Welcome to my portfolio 2.0, please enjoy your stay in either light or dark mode by toggling the icon on the navbar. </p>
 
-            My name is Kah a software engineer who focuses on JavaScript and React but also have experience with Ruby on Rails and Express. During this pandemic I have spent my time learning new skills, participating in hackathons, and recreating my portfolio.
+            <br></br>
 
-            There is so much that I'd like to talk about so please check out the contacts page :)
+            <p>My name is Kah a software engineer who focuses on JavaScript and React but also have experience with Ruby on Rails and Express.</p> 
+            
+            <br></br>
 
-          </p>}
+            <p>During this pandemic I have spent my time learning new skills, participating in hackathons, and recreating my portfolio.</p>
+
+            <br></br>
+
+            <p>There is so much that I'd like to talk about so please check out the contacts page :)</p>
+
+            <br></br>
+
+            <a href="https://kahmyap.herokuapp.com/"> Old Portfolio </a>
+          </div>}
       </div>
     </div>
   )
