@@ -9,6 +9,7 @@
     /* background-image: url(../../Images/landing.jpg); */
     /* padding: 50px; */
     transition: var(--transition-delay);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.8);
   }
 
   @keyframes fadeIn{
@@ -76,6 +77,7 @@
 .dark_landing_container {
   background-image: url(../../Images/landing.jpg);
   color: white;
+  /* box-shadow: 0 0 8px 0 rgba(155,155,155,155.8); */
 }
 
 .dark_landing_container img {

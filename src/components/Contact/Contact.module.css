@@ -1,8 +1,5 @@
 .contact_container {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    padding: 10%;
+    padding: 12%;
     color: black;
     background-size: 100% 100%;
     font-size: 36px;
@@ -12,6 +9,7 @@
     box-sizing: border-box;
     height: 100vh;
     font-size: 28px;
+    background-color: #F0F0F0;
 }
 
 .bubble_container {
