@@ -55,8 +55,8 @@ export default ({toggleMode, dark}) => {
 
             <div className={styles.social_container}>
                 <a href="#" className="fa fa-instagram"></a>
-                <a href="#" className="fa fa-github"></a>
-                <a href="#" className="fa fa-linkedin"></a>
+                <a href="https://github.com/Kah919" className="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/kah-m-yap/" className="fa fa-linkedin"></a>
             </div>
             
         </nav>

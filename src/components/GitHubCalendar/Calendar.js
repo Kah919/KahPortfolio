@@ -17,6 +17,7 @@ export default () => {
     
     return(
         <div className={ isDark() }>
+            <h1> GitHub Contributions </h1>
             <GitHubCalendar username="kah919" blockSize={20} />
         </div>
     )
