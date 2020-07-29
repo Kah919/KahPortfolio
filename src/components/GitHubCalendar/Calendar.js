@@ -17,8 +17,13 @@ export default () => {
     
     return(
         <div className={ isDark() }>
-            <h1> GitHub Contributions </h1>
-            <GitHubCalendar username="kah919" blockSize={20} />
+            <h1 contenteditable spellcheck="false">
+                <span> GitHub Contributions <a href="https://github.com/Kah919" className="fa fa-github"></a> </span> 
+            </h1>
+
+            <div className={ styles.calendar }>
+            <GitHubCalendar username="kah919" blockSize={30} />
+            </div>
         </div>
     )
 }
