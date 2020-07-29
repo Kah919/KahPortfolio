@@ -27,6 +27,7 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.8.0",
     "react-spring": "^9.0.0-rc.3",
+    "react-tooltip": "^4.2.7",
     "react-transition-group": "^1.2.1",
     "serve": "^11.3.2"
   },

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import GitHubCalendar from 'react-github-calendar';
+import ReactTooltip from "react-tooltip";
 import styles from './Calendar.module.css';
 import Context from '../theme-context';
 import cx from 'classnames';
@@ -22,7 +23,9 @@ export default () => {
             </h1>
 
             <div className={ styles.calendar }>
-            <GitHubCalendar username="kah919" blockSize={30} />
+            <GitHubCalendar username="kah919" blockSize={30} >
+            <ReactTooltip delayShow={50} html />
+            </GitHubCalendar>
             </div>
         </div>
     )
