@@ -33,6 +33,10 @@ a {
     transition: ease-in;
 }
 
+.dark, .container {
+    border-bottom: 1px solid white;
+}
+
 .dark a {
     color: white;
 }

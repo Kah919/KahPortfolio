@@ -1,7 +1,7 @@
 .project_container {
     display: grid;
     grid-template-rows: 1fr 5fr;
-    height: 125vh;
+    height: 100vh;
     text-align: center;
     box-sizing: border-box;
     padding: 100px;
