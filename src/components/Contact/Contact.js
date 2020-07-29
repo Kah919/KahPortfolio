@@ -18,7 +18,7 @@ export default () => {
     }
 
   return(
-      <div className={ globalState.dark ? cx(styles.dark, styles.contact_container) : styles.contact_container }>
+      <div id="contact" className={ globalState.dark ? cx(styles.dark, styles.contact_container) : styles.contact_container }>
         <div className={ styles.icons }>
         {print ? type() : <p className="type">You can contact me on</p>}
         <div className={ styles.bubble_container}>

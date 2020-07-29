@@ -54,7 +54,7 @@ export default (props) => {
     
 
     return(
-        <div className={ globalState.dark ? cx(styles.project_container, styles.dark) : styles.project_container}>
+        <div id="project" className={ globalState.dark ? cx(styles.project_container, styles.dark) : styles.project_container}>
             <div className={ styles.description }>
                 <form>
                     <select value={ project } onChange={ handleChange }>
