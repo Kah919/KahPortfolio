@@ -5,6 +5,7 @@ import Leaves from '../../Images/leaves.jpg';
 import styles from './Landing.module.css';
 import cx from 'classnames';
 import Context from '../theme-context';
+import Project from '../Projects/ProjectContainer';
 
 
 export default ({ dark }) => {
@@ -51,6 +52,7 @@ export default ({ dark }) => {
             <a href="https://kahmyap.herokuapp.com/"> Old Portfolio </a>
           </div>}
       </div>
+          
     </div>
   )
 }
