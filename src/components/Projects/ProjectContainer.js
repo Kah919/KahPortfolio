@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from './Project.module.css';
 import cx from 'classnames';
 import AwesomeSlider from 'react-awesome-slider';

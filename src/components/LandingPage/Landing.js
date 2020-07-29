@@ -1,11 +1,9 @@
 import React, { useState, useContext } from 'react';
-import { useTrail, animated } from 'react-spring';
 import Force from '../../Images/force.jpg';
 import Leaves from '../../Images/leaves.jpg';
 import styles from './Landing.module.css';
 import cx from 'classnames';
 import Context from '../theme-context';
-import Project from '../Projects/ProjectContainer';
 
 
 export default ({ dark }) => {
