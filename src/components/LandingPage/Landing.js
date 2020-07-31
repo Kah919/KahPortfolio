@@ -5,7 +5,6 @@ import styles from './Landing.module.css';
 import cx from 'classnames';
 import Context from '../theme-context';
 
-
 export default ({ dark }) => {
     const [toggle, set] = useState(true)
     const { globalState, globalDispatch } = useContext(Context);
@@ -50,7 +49,6 @@ export default ({ dark }) => {
             <a href="https://kahmyap.herokuapp.com/"> Old Portfolio </a>
           </div>}
       </div>
-          
     </div>
   )
 }

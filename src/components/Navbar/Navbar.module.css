@@ -22,6 +22,11 @@
     cursor: pointer;
 }
 
+.nav_container svg:hover {
+    fill: orangered;
+    transition: var(--transition-delay);
+}
+
 .nav_container a {
     align-items: center;
     padding: 5px;
