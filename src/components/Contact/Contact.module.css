@@ -10,6 +10,7 @@
     height: 100vh;
     font-size: 28px;
     background-color: #F0F0F0;
+    background-image: url(../../Images/plant2.jpg);
 }
 
 .bubble_container {
@@ -40,8 +41,17 @@
     opacity: 1;
 }
 
+@media only screen 
+/* and (min-device-width : 414px)  */
+and (max-device-width : 736px) {
+    .contact_container {
+        background-image: url(../../Images/plant.jpg);
+    }
+}
+
 .dark {
     background-image: url(../../Images/rain.gif);
     color: white;
     background-size: cover;
 }
+
