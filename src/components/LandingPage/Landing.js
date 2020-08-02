@@ -26,7 +26,7 @@ export default ({ dark }) => {
       <div className={styles.right}>
         { toggle ? 
           <div> 
-            <h1> Kah Yap </h1>
+            <h1> <span> Kah Yap </span> </h1>
             <h5> Software Engineer </h5>
           </div> : 
           <div className={ styles.text_container}>
