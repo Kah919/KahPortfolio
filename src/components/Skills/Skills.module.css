@@ -1,0 +1,25 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 10px 50px 10px;
+}
+
+.container h1 {
+    font-size: 34px;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid orangered;
+    width: 80%;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+
+
+
