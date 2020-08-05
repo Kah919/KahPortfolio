@@ -4,6 +4,10 @@
     padding: 50px 10px 50px 10px;
 }
 
+.container h1, h2, p {
+    text-shadow: 0 13.36px 8.896px #f1eee9,0 -2px 1px #fff;
+}
+
 .container h1 {
     font-size: 48px;
     margin: 0 auto 20px auto;
@@ -18,7 +22,7 @@
 
 .container p {
     font-size: 18px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
