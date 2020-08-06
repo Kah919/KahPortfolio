@@ -4,6 +4,8 @@ import ReactTooltip from "react-tooltip";
 import styles from './Calendar.module.css';
 import Context from '../theme-context';
 import cx from 'classnames';
+import Zoom from 'react-reveal/Zoom';
+
 
 export default () => {
     const { globalState, globalDispatch } = useContext(Context);
@@ -22,11 +24,13 @@ export default () => {
                 <span> GitHub Contributions <a href="https://github.com/Kah919" className="fa fa-github"></a> </span> 
             </h1>
 
+            <Zoom>
             <div className={ styles.calendar }>
             <GitHubCalendar username="kah919" blockSize={30} >
             <ReactTooltip delayShow={50} html />
             </GitHubCalendar>
             </div>
+            </Zoom>
         </div>
     )
 }
