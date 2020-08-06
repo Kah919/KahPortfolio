@@ -48,7 +48,7 @@ export default ({ dark }) => {
 
             <a href="https://kahmyap.herokuapp.com/"> Old Portfolio </a>
           </div>}
-      </div>
+        </div>
     </div>
   )
 }

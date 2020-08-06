@@ -5,7 +5,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import data from './data';
 import Context from '../theme-context';
-
+import Zoom from 'react-reveal/Zoom';
 
 
 export default (props) => {
@@ -73,9 +73,11 @@ export default (props) => {
             </div>
 
             <div className={ cx(styles.carousel_container, styles.aws_btn)}>
+                <Zoom>
                 <AwesomeSlider bullets={ false } className={ styles.aws_btn } >
                     { carouselImg() }
                 </AwesomeSlider>
+                </Zoom>
             </div>
         </div>
     )
