@@ -38,7 +38,7 @@ export default ({ dark }) => {
             
             <br></br>
 
-            <p>During this pandemic I have spent my time learning new skills, participating in hackathons, and recreating my portfolio.</p>
+            <p>Currently I am employed at Fireflies as a front-end engineer. It is an amazing start-up with a mission driven goal to help others who are less fortunate by hosting matchraisers.</p>
 
             <br></br>
 
