@@ -136,6 +136,6 @@ a {
   }
 
 .light {
-    background-image: url('../../Images/blindshadow.jpg');
-    opacity: 80%;
+    /* background-image: url('../../Images/blindshadow.jpg'); */
+    /* opacity: 80%; */
 }
