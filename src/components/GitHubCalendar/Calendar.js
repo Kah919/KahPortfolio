@@ -15,7 +15,7 @@ export default () => {
             return cx(styles.container, styles.dark)
         }
 
-        return styles.container
+        return cx(styles.container, styles.light)
     }
     
     return(
@@ -25,7 +25,7 @@ export default () => {
             </h1>
 
             <Zoom>
-            <div className={ styles.calendar }>
+            <div className={ globalState.dark ? cx(styles.calendar, styles.noBorder) : styles.calendar }>
             <GitHubCalendar username="kah919" blockSize={30} >
             <ReactTooltip delayShow={50} html />
             </GitHubCalendar>
