@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.8);
 }
 
@@ -16,13 +16,13 @@
 }
 
 .carousel_image {
-    width: 700px;
-    height: 400px;
+    width: 400px;
+    height: 250px;
     padding: 20px;
 }
 
 .info_container {
-    font-size: 24px;
+    font-size: 14px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -40,7 +40,7 @@
 }
 
 .technology li {
-    font-size: 24px;
+    font-size: 14px;
 }
 
 .technology a {
@@ -54,4 +54,19 @@
 
 .dark a {
     color: white;
+}
+
+@media only screen and (min-width: 1224px) {
+    .container {
+        height: 90vh;
+    }
+
+    .carousel_image {
+        width: 500px;
+        height: 350px;
+    }
+
+    .info_container, .technology li {
+        font-size: 20px;
+    }
 }
