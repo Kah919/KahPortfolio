@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Landing from './components/LandingPage/Landing';
 import Project from './components/Projects/ProjectContainer';
+// import Project from '.components/ProjectCarousel/ProjectCarousel.js';
 import Contact from './components/Contact/Contact';
 import Main from './components/Container';
 
@@ -12,7 +13,6 @@ function App() {
   const [dark, setDark] = useState(false);
 
   const toggleMode = () => {
-    console.log("CLICKED")
     setDark(!dark);
   }
 

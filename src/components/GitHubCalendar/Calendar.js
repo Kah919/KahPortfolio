@@ -21,7 +21,7 @@ export default () => {
     return(
         <div className={ isDark() }>
             <h1 contenteditable spellcheck="false">
-                <span> GitHub Contributions <a href="https://github.com/Kah919" className="fa fa-github"></a> </span> 
+                <span> GitHub Contributions <a href="https://github.com/kah919" className="fa fa-github"></a> </span> 
             </h1>
 
             <Zoom>

@@ -34,7 +34,7 @@ a {
 }
 
 .dark {
-    background-color: #17202A;
+    background-color: black;
     color: white;
     animation-duration: 8s;
     transition: ease-in;
