@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    width: 100%;
     height: 90vh;
     margin: 0 auto;
     box-shadow: 0 0 2px 0 rgba(0,0,0,0.8);
@@ -12,13 +12,7 @@
 
 .calendar {
     padding: 20px;
-    background-color: white;
     border-radius: 20px;
-}
-
-.noBorder {
-    background-color: #17202A;
-    color: white;
 }
 
 a {
@@ -46,6 +40,11 @@ a {
 
 .dark a {
     color: white;
+}
+
+.dark div > article > div > svg > text {
+    color: white;
+    fill: white !important;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
@@ -133,8 +132,3 @@ a {
         padding: 10px;
     }
   }
-
-.light {
-    /* background-image: url('../../Images/blindshadow.jpg'); */
-    /* opacity: 80%; */
-}

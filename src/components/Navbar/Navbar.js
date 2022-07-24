@@ -3,7 +3,7 @@ import styles from './Navbar.module.css';
 import cx from 'classnames';
 import { Link as Download } from 'react-router-dom'
 import Context from '../theme-context';
-import resume from '../../Images/resume2.pdf';
+import resume from '../../Images/resume3.pdf';
 import { Link, animateScroll as scroll } from "react-scroll";
 import DarkModeToggle from "react-dark-mode-toggle";
 

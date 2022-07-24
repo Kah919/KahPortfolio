@@ -27,8 +27,8 @@ export default () => {
         </Fade>
         <div className={ styles.bubble_container}>
           <Fade left cascade>
-          <a href="https://github.com/kah919" className="fa fa-github-alt" />
-          <a href="https://www.linkedin.com/in/kah-m-yap/" className="fa fa-linkedin" />
+          <a href="https://github.com/kah919" target="_blank" className="fa fa-github-alt" />
+          <a href="https://www.linkedin.com/in/kah-m-yap/" target="_blank" className="fa fa-linkedin" />
           <a className="fa fa-phone" onMouseEnter={ click }/>
           <a className="fa fa-envelope" onMouseEnter={ click }/>
           </Fade>
